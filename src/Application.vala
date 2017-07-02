@@ -19,7 +19,7 @@
 * Authored by: Aleksandar Stefanović <theonewithideas@gmail.com>
 */
 
-public class URMSimulator.Application : Gtk.Application {
+public class URMSimulator.Application : Granite.Application {
     
     public Application () {
         Object (application_id: "com.github.aleksandar-stefanovic.urmsimulator",
@@ -28,8 +28,12 @@ public class URMSimulator.Application : Gtk.Application {
     
     protected override void activate () {
         var app_window = new Gtk.ApplicationWindow (this);
+        var header_bar = new Gtk.HeaderBar ();
+        header_bar.show_close_button = true;
+        header_bar.set_title (_("URM Simulator"));
         
-        app_window.show ();
+        app_window.set_titlebar (header_bar);
+        app_window.show_all ();
     }
     
     

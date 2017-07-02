@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-02 18:04+0200\n"
+"POT-Creation-Date: 2017-07-02 19:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Application.vala:25
+#: ../src/Application.vala:33
 msgid "URM Simulator"
-msgstr ""
-
-#: ../src/Application.vala:34
-msgid "Label1"
-msgstr ""
-
-#: ../src/Application.vala:35
-msgid "Label2"
 msgstr ""
