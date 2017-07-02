@@ -34,26 +34,27 @@ public class URMSimulator.Application : Granite.Application {
         header_bar.title = _("URM Simulator");
         app_window.set_titlebar (header_bar);
         
-        var root = new HBox(true, 10);
-        app_window.add(root);
+        var root = new HBox (true, 10);
+        app_window.add (root);
         
         var v_box = new VBox(false, 10);
-        root.add(v_box);
+        root.add (v_box);
         
         var source_view = new SourceView ();
-        v_box.add(source_view);
+        v_box.add (source_view);
         
         var output_view = new SourceView ();
         output_view.editable = false;
-        v_box.add(output_view);
-
+        v_box.add (output_view);
         
-
+        var controls = new VBox (false, 10);
+        root.add (controls);
+        
+        var debug_checkbox = new CheckButton.with_label (_("Debug mode"));
+        controls.add (debug_checkbox);
         
         app_window.show_all ();
-    }
-    
-    
+    }    
 }
 
 int main (string[] args) {
