@@ -62,4 +62,3 @@ install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar-stefanovic
 
 # install our .appdata.xml file so AppCenter will see it
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml DESTINATION ${DATADIR}/metainfo/)
-
