@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=URM Simulator
+GenericName=URM Simulator
+Comment=A simple URM Simulator.
+Categories=Development;Education;Science;
+Exec=com.github.aleksandar-stefanovic.urmsimulator
+Icon=application-default-icon
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=urmsimulator
+Keywords=URM;Simulator;
