@@ -6,9 +6,9 @@ Build-Depends: cmake (>= 2.8),
                cmake-elementary,
                debhelper (>= 8.0.0),
                granite,
+               libgtksourceview-3.0-dev (>= 3.10),
                valac-0.26 | valac (>= 0.26)
 Standards-Version: 3.9.3
-
 Package: com.github.aleksandar-stefanovic.urmsimulator
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}

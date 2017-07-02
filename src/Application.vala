@@ -18,6 +18,7 @@
 *
 * Authored by: Aleksandar Stefanović <theonewithideas@gmail.com>
 */
+using Gtk;
 
 public class URMSimulator.Application : Granite.Application {
     
@@ -27,12 +28,28 @@ public class URMSimulator.Application : Granite.Application {
     }
     
     protected override void activate () {
-        var app_window = new Gtk.ApplicationWindow (this);
-        var header_bar = new Gtk.HeaderBar ();
+        var app_window = new ApplicationWindow (this);
+        var header_bar = new HeaderBar ();
         header_bar.show_close_button = true;
-        header_bar.set_title (_("URM Simulator"));
-        
+        header_bar.title = _("URM Simulator");
         app_window.set_titlebar (header_bar);
+        
+        var root = new HBox(true, 10);
+        app_window.add(root);
+        
+        var v_box = new VBox(false, 10);
+        root.add(v_box);
+        
+        var source_view = new SourceView ();
+        v_box.add(source_view);
+        
+        var output_view = new SourceView ();
+        output_view.editable = false;
+        v_box.add(output_view);
+
+        
+
+        
         app_window.show_all ();
     }
     
