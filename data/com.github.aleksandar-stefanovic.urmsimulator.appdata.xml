@@ -7,7 +7,7 @@
   <summary>Unlimited programming potential.</summary>
   <description>
     <p>URM is a theoretical machine which has unlimited number of registers. The point is to prove that anything that can be programmed with four basic instructions can also be programmed with any other programming language.</p> 
-    <p>Use four basic instructions (Zero, Successor, Tranfer, Jump) to program anything you can imagine.</p>
+    <p>Use four basic instructions (Zero, Successor, Transfer, Jump) to program anything you can imagine.</p>
   </description>
   
   <custom>

@@ -28,7 +28,7 @@ add_subdirectory (po)
 find_package(PkgConfig)
 
 # now let's actually check for the required dependencies
-pkg_check_modules(DEPS REQUIRED gtk+-3.0)
+pkg_check_modules(DEPS REQUIRED gtk+-3.0 granite)
 
 add_definitions(${DEPS_CFLAGS})
 link_libraries(${DEPS_LIBRARIES})
@@ -49,6 +49,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
 # tell what libraries to use when compiling
 PACKAGES
     gtk+-3.0
+    granite
 )
 
 # tell cmake what to call the executable we just made

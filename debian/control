@@ -5,6 +5,7 @@ Maintainer: Aleksandar Stefanović <theonewithideas@gmail.com>
 Build-Depends: cmake (>= 2.8),
                cmake-elementary,
                debhelper (>= 8.0.0),
+               granite,
                valac-0.26 | valac (>= 0.26)
 Standards-Version: 3.9.3
 
