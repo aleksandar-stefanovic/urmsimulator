@@ -19,23 +19,23 @@
 * Authored by: Aleksandar Stefanović <theonewithideas@gmail.com>
 */
 
-int main (string[] args) {
-    Gtk.init (ref args);
-    var window = new Gtk.Window ();
-    window.title = "Hello World!";
-    window.set_border_width (12);
-    window.set_position (Gtk.WindowPosition.CENTER);
-    window.set_default_size (350, 70);
-    window.destroy.connect (Gtk.main_quit);
+public class URMSimulator.Application : Gtk.Application {
     
-    var button = new Gtk.Button.with_label ("Glupi početak");
-    button.clicked.connect (() => {
-        stdout.printf("Nešto se desilo");
-    });
+    public Application () {
+        Object (application_id: "com.github.aleksandar-stefanovic.urmsimulator",
+        flags: ApplicationFlags.FLAGS_NONE);
+    }
     
-    window.add (button);
-    window.show_all ();
+    protected override void activate () {
+        var app_window = new Gtk.ApplicationWindow (this);
+        
+        app_window.show ();
+    }
+    
+    
+}
 
-    Gtk.main ();
-    return 0;
+int main (string[] args) {
+    var app = new URMSimulator.Application ();
+    return app.run (args);
 }
