@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 Your Organization (https://yourwebsite.com)
+* Copyright (c) 2011-2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -26,11 +26,19 @@ public enum Type {
 public class Instruction {
 
     public Type type;
-    public int[] values;
+    private int[] values;
 
-    public Instruction(Type type = Type.NULL, int[] values =  {}) {
+    public Instruction (Type type = Type.NULL, int[] values = {}) {
         this.type = type;
         this.values = values;
+    }
+    
+    public void add_value (int val) {
+        values += val;
+    }
+    
+    public int get_value (int index) {
+        return values[int];
     }
     
 }

@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 Your Organization (https://yourwebsite.com)
+* Copyright (c) 2011-2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -50,6 +50,14 @@ public class URMSimulator.Application : Granite.Application {
         var controls = new VBox (false, 10);
         root.add (controls);
         
+        var run_button = new Button.with_label (_("Run"));
+        run_button.clicked.connect (() => {
+            var instructions = Parser.parse (source_view.buffer.text);
+            //Placeholder
+            output_view.buffer.text = instructions.length.to_string();
+        });
+        controls.pack_start (run_button);
+        
         var debug_checkbox = new CheckButton.with_label (_("Debug mode"));
         controls.add (debug_checkbox);
         
@@ -57,7 +65,7 @@ public class URMSimulator.Application : Granite.Application {
     }    
 }
 
-int main (string[] args) {
+int main (string[] args) {    
     var app = new URMSimulator.Application ();
     return app.run (args);
 }
