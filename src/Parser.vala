@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
+* Copyright (c) 2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -54,7 +54,7 @@ public class Parser {
             } else if (entry.contains ("J")) {
                 instruction.type = Type.J;
                 int arg0, arg1, arg2;
-                entry.scanf("%i %i", out arg0, out arg1, out arg2);
+                entry.scanf("%i %i %i", out arg0, out arg1, out arg2);
                 instruction.add_value (arg0);
                 instruction.add_value (arg1);
                 instruction.add_value (arg2);

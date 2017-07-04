@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
+* Copyright (c) 2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public

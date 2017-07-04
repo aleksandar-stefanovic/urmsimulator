@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
+* Copyright (c) 2017 Aleksandar Stefanović (https://github.com/aleksandar-stefanovic)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -21,6 +21,9 @@
 using Gtk;
 
 public class URMSimulator.Application : Granite.Application {
+
+    private SourceView source_view;
+    private SourceView output_view;
     
     public Application () {
         Object (application_id: "com.github.aleksandar-stefanovic.urmsimulator",
@@ -34,29 +37,31 @@ public class URMSimulator.Application : Granite.Application {
         header_bar.title = _("URM Simulator");
         app_window.set_titlebar (header_bar);
         
+        var run_button = new Button ();
+        run_button.image = new Gtk.Image.from_icon_name ("media-playback-start", Gtk.IconSize.LARGE_TOOLBAR);
+        run_button.tooltip_text = _("Run");
+        run_button.clicked.connect (() => {
+            var instructions = Parser.parse (source_view.buffer.text);
+            //Placeholder
+            output_view.buffer.text = instructions.length.to_string();
+        });
+        header_bar.add (run_button);
+        
         var root = new HBox (true, 10);
         app_window.add (root);
         
         var v_box = new VBox(false, 10);
         root.add (v_box);
         
-        var source_view = new SourceView ();
+        source_view = new SourceView ();
         v_box.add (source_view);
         
-        var output_view = new SourceView ();
+        output_view = new SourceView ();
         output_view.editable = false;
         v_box.add (output_view);
         
         var controls = new VBox (false, 10);
         root.add (controls);
-        
-        var run_button = new Button.with_label (_("Run"));
-        run_button.clicked.connect (() => {
-            var instructions = Parser.parse (source_view.buffer.text);
-            //Placeholder
-            output_view.buffer.text = instructions.length.to_string();
-        });
-        controls.pack_start (run_button);
         
         var debug_checkbox = new CheckButton.with_label (_("Debug mode"));
         controls.add (debug_checkbox);
