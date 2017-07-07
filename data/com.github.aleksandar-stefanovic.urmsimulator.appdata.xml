@@ -10,6 +10,16 @@
     <p>Use four basic instructions (Zero, Successor, Transfer, Jump) to program anything you can imagine.</p>
   </description>
   
+  <developer_name>Aleksandar Stefanović</developer_name>
+  <url type="homepage">https://github.com/aleksandar-stefanovic/urmsimulator/</url>
+  <url type="bugtracker">https://github.com/aleksandar-stefanovic/urmsimulator/issues</url>
+  
+  <screenshots>
+    <screenshot type="default">
+        <image>https://raw.githubusercontent.com/aleksandar-stefanovic/urmsimulator/master/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  
   <custom>
      <value key="x-appcenter-color-primary">rgb(86, 61, 124)</value>
      <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
