@@ -47,6 +47,8 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/Application.vala
     src/Instruction.vala
     src/Parser.vala
+    src/Processor.vala
+    src/URMSourceView.vala
 
 # tell what libraries to use when compiling
 PACKAGES

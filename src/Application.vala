@@ -22,8 +22,9 @@ using Gtk;
 
 public class URMSimulator.Application : Granite.Application {
 
-    private SourceView source_view;
+    private URMSourceView source_view;
     private SourceView output_view;
+    private Processor processor;
     
     public Application () {
         Object (application_id: "com.github.aleksandar-stefanovic.urmsimulator",
@@ -32,6 +33,7 @@ public class URMSimulator.Application : Granite.Application {
     
     protected override void activate () {
         var app_window = new ApplicationWindow (this);
+        app_window.set_default_size (800, 600);
         var header_bar = new HeaderBar ();
         header_bar.show_close_button = true;
         header_bar.title = _("URM Simulator");
@@ -40,31 +42,42 @@ public class URMSimulator.Application : Granite.Application {
         var run_button = new Button ();
         run_button.image = new Gtk.Image.from_icon_name ("media-playback-start", Gtk.IconSize.LARGE_TOOLBAR);
         run_button.tooltip_text = _("Run");
-        run_button.clicked.connect (() => {
-            var instructions = Parser.parse (source_view.buffer.text);
-            //Placeholder
-            output_view.buffer.text = instructions.length.to_string();
-        });
         header_bar.add (run_button);
         
-        var root = new HBox (true, 10);
+        var root = new Box (Orientation.HORIZONTAL, 10);
+        root.margin = 10;
+        root.homogeneous = true;
         app_window.add (root);
         
-        var v_box = new VBox(false, 10);
-        root.add (v_box);
+        var text_fields = new Box (Orientation.VERTICAL, 10);
+        text_fields.homogeneous = true;
+        root.add (text_fields);
         
-        source_view = new SourceView ();
-        v_box.add (source_view);
+        source_view = new URMSourceView ();
+        text_fields.add (source_view);
         
         output_view = new SourceView ();
         output_view.editable = false;
-        v_box.add (output_view);
+        text_fields.add (output_view);
         
-        var controls = new VBox (false, 10);
+        var controls = new Grid ();
+        controls.orientation = Orientation.VERTICAL;
+        //controls.homogeneous = false;
         root.add (controls);
         
-        var debug_checkbox = new CheckButton.with_label (_("Debug mode"));
-        controls.add (debug_checkbox);
+        var debug_check_button = new CheckButton.with_label (_("Debug mode"));
+        controls.add (debug_check_button);
+        
+        //end of creating layout, start of actual logic
+        
+        processor = new Processor (output_view.buffer);
+        
+        run_button.clicked.connect (() => {
+            output_view.buffer.text = "";
+            processor.reset ();
+            var instructions = Parser.parse (source_view.buffer.text);
+            processor.run (instructions, debug_check_button.active);
+        });
         
         app_window.show_all ();
     }    

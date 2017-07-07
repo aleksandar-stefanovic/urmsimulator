@@ -38,23 +38,24 @@ public class Parser {
             if (entry.contains ("Z")) {
                 instruction.type = Type.Z;
                 var arg0 = 0;
-                entry.scanf("%i", out arg0);
+                //this pattern is used to ignore everything until the integer is found
+                entry.scanf("%*[^0123456789]%i", out arg0);
                 instruction.add_value (arg0);
             } else if (entry.contains ("S")) {
                 instruction.type = Type.S;
                 var arg0 = 0;
-                entry.scanf("%i", out arg0);
+                entry.scanf("%*[^0123456789]%i", out arg0);
                 instruction.add_value (arg0);
             } else if (entry.contains ("T")) {
                 instruction.type = Type.T;
                 var arg0 = 0, arg1 = 0;
-                entry.scanf("%i %i", out arg0, out arg1);
+                entry.scanf("%*[^0123456789]%i%*[^0123456789]%i", out arg0, out arg1);
                 instruction.add_value (arg0);
                 instruction.add_value (arg1);
             } else if (entry.contains ("J")) {
                 instruction.type = Type.J;
                 int arg0, arg1, arg2;
-                entry.scanf("%i %i %i", out arg0, out arg1, out arg2);
+                entry.scanf("%*[^0123456789]%i%*[^0123456789]%i%*[^0123456789]%i", out arg0, out arg1, out arg2);
                 instruction.add_value (arg0);
                 instruction.add_value (arg1);
                 instruction.add_value (arg2);

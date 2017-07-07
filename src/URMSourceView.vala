@@ -19,30 +19,26 @@
 * Authored by: Aleksandar Stefanović <theonewithideas@gmail.com>
 */
 
-public enum Type {
-    NULL, Z, S, T, J
-}
-
-public class Instruction {
-
-    public Type type;
-    private int[] values;
-
-    public Instruction (Type type = Type.NULL, int[] values = {}) {
-        this.type = type;
-        this.values = values;
-    }
+public class URMSourceView : Gtk.SourceView {
     
-    public void add_value (int val) {
-        values += val;
-    }
+    public URMSourceView () {
     
-    public int get_value (int index) {
-        return values[index];
-    }
-    
-    public int get_value_count () {
-        return values.length;
-    }
+        this.show_line_numbers = true;
+        //TODO: this will be enabled when custom language support is functional
+        /*
+        var manager = Gtk.SourceLanguageManager.get_default ();
+        string search_paths[] = {"/usr/share/com.github.aleksandar-stefanovic.urmsimulator", null};
+        manager.set_search_path (search_paths);
+        
+        var buffer = new Gtk.SourceBuffer.with_language (manager.get_language ("urm"));
+        
+        buffer.highlight_syntax = true;
+        
+        var style = Gtk.SourceStyleSchemeManager.get_default ().get_scheme ("solarized-light");
+        
+        buffer.style_scheme = style;
+        this.buffer = buffer;
+        */
+    }   
     
 }
