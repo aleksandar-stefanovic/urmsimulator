@@ -65,8 +65,8 @@ public class URMSimulator.Application : Granite.Application {
         //controls.homogeneous = false;
         root.add (controls);
         
-        var debug_check_button = new CheckButton.with_label (_("Debug mode"));
-        controls.add (debug_check_button);
+        var debug_switch = new LabeledSwitchBox (_("Debug mode"));
+        controls.add (debug_switch);
         
         //end of creating layout, start of actual logic
         
@@ -76,7 +76,7 @@ public class URMSimulator.Application : Granite.Application {
             output_view.buffer.text = "";
             processor.reset ();
             var instructions = Parser.parse (source_view.buffer.text);
-            processor.run (instructions, debug_check_button.active);
+            processor.run (instructions, debug_switch.is_active ());
         });
         
         app_window.show_all ();

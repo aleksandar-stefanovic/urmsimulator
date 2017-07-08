@@ -48,7 +48,8 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/Instruction.vala
     src/Parser.vala
     src/Processor.vala
-    src/URMSourceView.vala
+    src/widget/URMSourceView.vala
+    src/widget/LabeledSwitchBox.vala
 
 # tell what libraries to use when compiling
 PACKAGES

@@ -96,10 +96,8 @@ public class Processor {
         for (int i = from; i < to; i++) {
             int val = registers[i];
             output.text += @"[$val]";
-            print(@"[$val]");
         }
         output.text += "\n";
-        print("\n");
     }
     
     
