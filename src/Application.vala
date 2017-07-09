@@ -54,11 +54,15 @@ public class URMSimulator.Application : Granite.Application {
         root.add (text_fields);
         
         source_view = new URMSourceView ();
-        text_fields.add (source_view);
+        var source_frame = new Frame (null);
+        source_frame.add (source_view);
+        text_fields.add (source_frame);
         
         output_view = new SourceView ();
         output_view.editable = false;
-        text_fields.add (output_view);
+        var output_frame = new Frame (null);
+        output_frame.add (output_view);
+        text_fields.add (output_frame);
         
         var controls = new Box (Orientation.VERTICAL, 12);
         root.add (controls);
