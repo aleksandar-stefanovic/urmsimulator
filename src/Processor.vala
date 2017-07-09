@@ -29,9 +29,13 @@ public class Processor {
         this.output = output;
     }
     
-    public void run (Instruction[] instructions, bool debug = false, int from = 0) {
+    public void run (Instruction[] instructions, bool debug = false, int[] initial_values = {}, int from = 0) {
+        for (int i = 0; i < initial_values.length; i++) {
+            registers[i] = initial_values[i];
+        }
+        
         var next_instruction = from;
-        var highest_register = 0;
+        var highest_register = initial_values.length - 1;
         
         while (next_instruction < instructions.length) {
             instruction_counter++;

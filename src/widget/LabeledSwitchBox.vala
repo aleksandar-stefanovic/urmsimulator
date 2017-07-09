@@ -25,16 +25,18 @@ public class LabeledSwitchBox: Box {
 
     private Switch switch_widget;
 
-    public LabeledSwitchBox (string label, bool active = false) {
+    public LabeledSwitchBox (string tooltip, bool active = false) {
         this.orientation = Orientation.HORIZONTAL;
         this.spacing = 10;
         this.hexpand = true;
         
-        this.pack_start (new Label (label), true, true, 12);
+        var label = new Label (tooltip);
+        label.halign = Align.START;
+        this.pack_start (label, true, true, 0);
         
         switch_widget = new Switch();
         switch_widget.active = active;
-        this.pack_end (switch_widget, false, false, 12);
+        this.pack_end (switch_widget, false, false, 0);
     }   
     
     public bool is_active () {

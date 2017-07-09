@@ -68,4 +68,16 @@ public class Parser {
         return instructions;
     }
     
+    public static int[] parse_initial_values (string input) {
+        int[] values = {};
+
+        var strings = Regex.split_simple ("\\D+", input.strip ());
+        
+        foreach(var token in strings) {
+            values += token.to_int();
+        }
+        
+        return values;
+    }
+    
 }

@@ -15,9 +15,9 @@ set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 set (PKGDATADIR "${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator")
 
 set (EXEC_NAME "com.github.aleksandar-stefanovic.urmsimulator")
-set (RELEASE_NAME "Initial release.")
-set (VERSION "1.0")
-set (VERSION_INFO "First public release.")
+set (RELEASE_NAME "URM Simulator")
+set (VERSION "1.1.0")
+set (VERSION_INFO "Stable")
 
 # Translation files
 set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")

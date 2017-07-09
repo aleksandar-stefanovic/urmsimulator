@@ -60,13 +60,24 @@ public class URMSimulator.Application : Granite.Application {
         output_view.editable = false;
         text_fields.add (output_view);
         
-        var controls = new Grid ();
-        controls.orientation = Orientation.VERTICAL;
-        //controls.homogeneous = false;
+        var controls = new Box (Orientation.VERTICAL, 12);
         root.add (controls);
         
         var debug_switch = new LabeledSwitchBox (_("Debug mode"));
         controls.add (debug_switch);
+        
+        var help_icon = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.BUTTON);
+        help_icon.tooltip_text = _("Values can by separated by anything.");
+        
+        var initial_values_text_box = new Box (Orientation.HORIZONTAL, 12);
+        initial_values_text_box.hexpand = true;
+        initial_values_text_box.add (new Label (_("Initial values")));
+        initial_values_text_box.add (help_icon);
+        controls.add (initial_values_text_box);
+        
+        var initial_values_entry = new Entry ();
+        controls.add (initial_values_entry);
+
         
         //end of creating layout, start of actual logic
         
@@ -75,8 +86,10 @@ public class URMSimulator.Application : Granite.Application {
         run_button.clicked.connect (() => {
             output_view.buffer.text = "";
             processor.reset ();
+            var initial_values = Parser.parse_initial_values (initial_values_entry.text);
+            
             var instructions = Parser.parse (source_view.buffer.text);
-            processor.run (instructions, debug_switch.is_active ());
+            processor.run (instructions, debug_switch.is_active (), initial_values);
         });
         
         app_window.show_all ();
