@@ -71,3 +71,11 @@ install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar-stefanovic
 
 # install our .appdata.xml file so AppCenter will see it
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml DESTINATION ${DATADIR}/metainfo/)
+
+# install our icons
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/16/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/16x16/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/24/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/24x24/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/32/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/32x32/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/48/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/48x48/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/64/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/64x64/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/128/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/128x128/apps)

@@ -6,7 +6,7 @@
   <name>URM Simulator</name>
   <summary>Unlimited programming potential.</summary>
   <description>
-    <p>URM is a theoretical machine which has unlimited number of registers. The point is to prove that anything that can be programmed with four basic instructions can also be programmed with any other programming language.</p> 
+    <p>URM (Unlimited Register Machine) is a theoretical machine which has unlimited memory. It is used to describe that anything that can be programmed with four basic instructions can also be programmed with any other programming language.</p> 
     <p>Use four basic instructions (Zero, Successor, Transfer, Jump) to program anything you can imagine.</p>
   </description>
   
@@ -21,8 +21,7 @@
   </screenshots>
   
   <custom>
-     <value key="x-appcenter-color-primary">rgb(86, 61, 124)</value>
-     <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
-     <value key="x-appcenter-suggested-price">0</value>
+     <value key="x-appcenter-color-primary">#8b7793</value>
+     <value key="x-appcenter-color-primary-text">#FAFAFA</value>
   </custom>
 </component>
