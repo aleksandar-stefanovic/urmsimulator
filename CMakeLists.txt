@@ -16,8 +16,8 @@ set (PKGDATADIR "${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator")
 
 set (EXEC_NAME "com.github.aleksandar-stefanovic.urmsimulator")
 set (RELEASE_NAME "Initial release.")
-set (VERSION "0.1")
-set (VERSION_INFO "Doesn't really contain anything.")
+set (VERSION "1.0")
+set (VERSION_INFO "First public release.")
 
 # Translation files
 set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
