@@ -12,6 +12,7 @@ Exercise in Vala and publishing to elementary OS's AppCenter.
  - Graph representation
  - Ability to manually set initial values
  - Custom sythax highlighting.
+ - Help and documentation.
  
 ## Note
 At the time of writing, instructions are zero-based numbered, while the text widget shows line numbers with one-based numbering. This means that the line number is bigger by one than the number of the instrucion, i.e. if the line number is "4", the actual instruction number is "3". This will be fixed in the future.
