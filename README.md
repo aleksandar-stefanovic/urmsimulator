@@ -5,12 +5,12 @@ Exercise in Vala and publishing to elementary OS's AppCenter.
 
 ## Current features
  - Executes URM code correctly
+  - Ability to manually set initial values
  - When in debug mode, shows the result after each instruction
  - Upon finishing, shows the state of all the used registers
 
 ## Planned features
  - Graph representation
- - Ability to manually set initial values
  - Custom sythax highlighting.
  - Help and documentation.
  
