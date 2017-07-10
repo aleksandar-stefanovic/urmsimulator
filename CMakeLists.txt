@@ -16,7 +16,7 @@ set (PKGDATADIR "${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator")
 
 set (EXEC_NAME "com.github.aleksandar-stefanovic.urmsimulator")
 set (RELEASE_NAME "URM Simulator")
-set (VERSION "1.1.0")
+set (VERSION "1.2.0")
 set (VERSION_INFO "Stable")
 
 # Translation files
@@ -79,3 +79,6 @@ install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/32/com.github.aleksandar-s
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/48/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/48x48/apps)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/64/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/64x64/apps)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/128/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/128x128/apps)
+
+# install the URM language definition file
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/urm.lang DESTINATION ${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator)

@@ -22,23 +22,19 @@
 public class URMSourceView : Gtk.SourceView {
     
     public URMSourceView () {
-    
         this.show_line_numbers = true;
-        //TODO: this will be enabled when custom language support is functional
-        /*
+
         var manager = Gtk.SourceLanguageManager.get_default ();
-        string search_paths[] = {"/usr/share/com.github.aleksandar-stefanovic.urmsimulator", null};
-        manager.set_search_path (search_paths);
-        
+        var tmp_paths = manager.search_path;
+        tmp_paths +=  "/usr/share/com.github.aleksandar-stefanovic.urmsimulator";
+        manager.search_path = tmp_paths;
+  
         var buffer = new Gtk.SourceBuffer.with_language (manager.get_language ("urm"));
-        
         buffer.highlight_syntax = true;
         
-        var style = Gtk.SourceStyleSchemeManager.get_default ().get_scheme ("solarized-light");
+        var style = Gtk.SourceStyleSchemeManager.get_default ().get_scheme ("kate");
         
         buffer.style_scheme = style;
         this.buffer = buffer;
-        */
     }   
-    
 }

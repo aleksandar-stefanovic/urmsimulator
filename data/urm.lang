@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language id="urm" _name="URM" version="2.0" _section="Source">
+
+     <metadata>
+        <!--What's the mimetype for *.urm files?-->
+        <property name="mimetypes"></property>
+        <property name="globs">*.urm</property>
+     </metadata>
+     
+     <styles>
+        <style id="keyword" _name="Keyword" map-to="def:keyword"/>
+     </styles>
+     
+     <definitions>
+        <context id="urm">
+            <include>
+                <context id="keywords" style-ref="keyword">
+                    <keyword>Z</keyword>
+                    <keyword>S</keyword>
+                    <keyword>T</keyword>
+                    <keyword>J</keyword>
+                </context>
+                
+            </include>
+        </context>
+     </definitions>
+
+</language>
