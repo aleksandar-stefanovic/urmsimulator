@@ -30,7 +30,7 @@
      id="namedview30"
      showgrid="false"
      inkscape:zoom="45.192499"
-     inkscape:cx="6.9901362"
+     inkscape:cx="4.4344023"
      inkscape:cy="8.2734506"
      inkscape:window-x="0"
      inkscape:window-y="30"
@@ -158,57 +158,39 @@
        style="display:inline;enable-background:new"
        id="g5635"
        inkscape:label="text">
-      <text
-         inkscape:label="text-shadow"
+      <g
+         aria-label="U"
          transform="scale(0.98091136,1.0194601)"
-         id="text4491-3-3-5"
-         y="165.96616"
-         x="341.39471"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.88045883px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.07000002;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.86652803;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
-         xml:space="preserve"><tspan
-           dx="0 0"
+         id="text4491-3-3-5">
+        <path
+           d="m 361.0748,139.03552 v 18.64429 q -0.037,4.19866 -2.31204,6.43671 -2.27505,2.21956 -6.5292,2.21956 -4.32814,0 -6.62169,-2.25655 -2.27504,-2.25655 -2.27504,-6.5292 v -18.51481 h 5.47491 v 18.53331 q 0,2.29354 0.73985,3.27385 0.73985,0.9803 2.68197,0.9803 1.94211,0 2.66347,-0.96181 0.72135,-0.9803 0.73985,-3.19986 v -18.62579 z"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.86652803;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           y="165.96616"
-           x="341.39471"
-           sodipodi:role="line"
-           id="tspan4526-6-6-3"><tspan
-             dx="0"
-             id="tspan4528-7-7-5"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.86652803;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">U</tspan></tspan></text>
-      <text
-         inkscape:label="text-shadow"
+           id="path3715"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         aria-label="U"
          transform="scale(0.98091136,1.0194601)"
-         id="text4491-3-3"
-         y="165.96616"
-         x="341.39471"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.88045883px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.15;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43963775;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922;enable-background:new"
-         xml:space="preserve"><tspan
-           dx="0 0"
+         id="text4491-3-3">
+        <path
+           d="m 361.0748,139.03552 v 18.64429 q -0.037,4.19866 -2.31204,6.43671 -2.27505,2.21956 -6.5292,2.21956 -4.32814,0 -6.62169,-2.25655 -2.27504,-2.25655 -2.27504,-6.5292 v -18.51481 h 5.47491 v 18.53331 q 0,2.29354 0.73985,3.27385 0.73985,0.9803 2.68197,0.9803 1.94211,0 2.66347,-0.96181 0.72135,-0.9803 0.73985,-3.19986 v -18.62579 z"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43963775;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
-           y="165.96616"
-           x="341.39471"
-           sodipodi:role="line"
-           id="tspan4526-6-6"><tspan
-             dx="0"
-             id="tspan4528-7-7"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43963775;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922">U</tspan></tspan></text>
-      <text
-         inkscape:label="text"
+           id="path3718"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         aria-label="U"
          transform="scale(0.98091136,1.0194601)"
-         id="text4491-3"
-         y="162.17372"
-         x="341.39471"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.88045883px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.43963775;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922;enable-background:new"
-         xml:space="preserve"><tspan
-           dx="0 0"
+         id="text4491-3">
+        <path
+           d="m 361.0748,135.24308 v 18.64429 q -0.037,4.19867 -2.31204,6.43672 -2.27505,2.21956 -6.5292,2.21956 -4.32814,0 -6.62169,-2.25655 -2.27504,-2.25655 -2.27504,-6.5292 v -18.51482 h 5.47491 v 18.53331 q 0,2.29355 0.73985,3.27385 0.73985,0.98031 2.68197,0.98031 1.94211,0 2.66347,-0.96181 0.72135,-0.98031 0.73985,-3.19987 v -18.62579 z"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.43963775;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
-           y="162.17372"
-           x="341.39471"
-           sodipodi:role="line"
-           id="tspan4526-6"><tspan
-             dx="0"
-             id="tspan4528-7"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.43963775;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922">U</tspan></tspan></text>
+           id="path3721"
+           inkscape:connector-curvature="0" />
+      </g>
     </g>
   </g>
 </svg>

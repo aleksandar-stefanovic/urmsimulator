@@ -16,7 +16,7 @@ set (PKGDATADIR "${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator")
 
 set (EXEC_NAME "com.github.aleksandar-stefanovic.urmsimulator")
 set (RELEASE_NAME "URM Simulator")
-set (VERSION "1.2.0")
+set (VERSION "1.2.1")
 set (VERSION_INFO "Stable")
 
 # Translation files

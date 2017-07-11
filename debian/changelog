@@ -1,8 +1,14 @@
+com.github.aleksandar-stefanovic.urmsimulator (1.2.1) precise; urgency=low
+
+  * Fixed icon displacement.
+
+ -- Aleksandar Stefanović <theonewithideas@gmail.com>  Tue, 11 Jul 2017 8:30:00 -0500
+
 com.github.aleksandar-stefanovic.urmsimulator (1.2.0) precise; urgency=low
 
   * Added basic sythax highlighting.
 
- -- Aleksandar Stefanović <theonewithideas@gmail.com>  Sun, 9 Jul 2017 13:00:00 -0500
+ -- Aleksandar Stefanović <theonewithideas@gmail.com>  Mon, 10 Jul 2017 13:00:00 -0500
  
 com.github.aleksandar-stefanovic.urmsimulator (1.1.0) precise; urgency=low
 
