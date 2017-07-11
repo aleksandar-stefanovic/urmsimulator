@@ -39,6 +39,11 @@ public class URMSimulator.Application : Granite.Application {
         header_bar.title = _("URM Simulator");
         app_window.set_titlebar (header_bar);
         
+        var open_button = new Button ();
+        open_button.image = new Gtk.Image.from_icon_name ("document-open", Gtk.IconSize.LARGE_TOOLBAR);
+        open_button.tooltip_text = _("Open");
+        header_bar.add (open_button);
+        
         var run_button = new Button ();
         run_button.image = new Gtk.Image.from_icon_name ("media-playback-start", Gtk.IconSize.LARGE_TOOLBAR);
         run_button.tooltip_text = _("Run");
@@ -81,7 +86,6 @@ public class URMSimulator.Application : Granite.Application {
         
         var initial_values_entry = new Entry ();
         controls.add (initial_values_entry);
-
         
         //end of creating layout, start of actual logic
         
@@ -90,10 +94,34 @@ public class URMSimulator.Application : Granite.Application {
         run_button.clicked.connect (() => {
             output_view.buffer.text = "";
             processor.reset ();
-            var initial_values = Parser.parse_initial_values (initial_values_entry.text);
             
+            var initial_values = Parser.parse_initial_values (initial_values_entry.text);
             var instructions = Parser.parse (source_view.buffer.text);
             processor.run (instructions, debug_switch.is_active (), initial_values);
+        });
+        
+        open_button.clicked.connect (() => {
+            var chooser = new FileChooserDialog (
+                null, app_window, FileChooserAction.OPEN,
+                _("Cancel"), ResponseType.CANCEL,
+                _("Open"), ResponseType.ACCEPT);
+                
+            var filter = new FileFilter ();
+		    chooser.set_filter (filter);
+		    filter.add_mime_type ("text/plain");
+            
+            if (chooser.run () == ResponseType.ACCEPT) {
+                var filename = chooser.get_filename ();
+                try {
+                    string text;
+                    FileUtils.get_contents (filename, out text);
+                    source_view.buffer.text = text;
+                } catch (Error e) {
+                    stderr.printf ("Error: %s\n", e.message);
+                }
+            }
+            
+            chooser.close ();
         });
         
         app_window.show_all ();
