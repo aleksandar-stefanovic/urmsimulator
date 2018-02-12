@@ -60,13 +60,17 @@ public class URMSimulator.Application : Gtk.Application {
         
         source_view = new URMSourceView ();
         var source_frame = new Frame (null);
-        source_frame.add (source_view);
+        var source_scrolled = new ScrolledWindow (null, null);
+        source_scrolled.add (source_view);
+        source_frame.add (source_scrolled);
         text_fields.add (source_frame);
         
         output_view = new SourceView ();
         output_view.editable = false;
+        var output_scrolled = new ScrolledWindow (null, null);
+        output_scrolled.add (output_view);
         var output_frame = new Frame (null);
-        output_frame.add (output_view);
+        output_frame.add (output_scrolled);
         text_fields.add (output_frame);
         
         var controls = new Box (Orientation.VERTICAL, 12);
