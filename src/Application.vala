@@ -20,7 +20,7 @@
 */
 using Gtk;
 
-public class URMSimulator.Application : Granite.Application {
+public class URMSimulator.Application : Gtk.Application {
 
     private URMSourceView source_view;
     private SourceView output_view;

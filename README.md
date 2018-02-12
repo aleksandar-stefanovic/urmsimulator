@@ -28,7 +28,6 @@ These are the required build dependencies:
 
 ```
 gtk+-3.0
-granite
 gtksourceview-3.0
 ```
 
