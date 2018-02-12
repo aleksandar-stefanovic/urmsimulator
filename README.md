@@ -10,18 +10,16 @@ Exercise in Vala and publishing to elementary OS's AppCenter.
  - Executes URM code correctly
  - Ability to load a file
  - Ability to manually set initial values
+ - Ability to set execution cap (to avoid infinite loops)
  - When in debug mode, shows the result after each instruction
  - Upon finishing, shows the state of all the used registers
- - Has sythax highlighting
+ - Has basic sythax highlighting
 
 
 ## Planned features
  - Graph representation
  - Help and documentation
  - Saving files
- 
-## Note
-At the time of writing, instructions are zero-based numbered, while the text widget shows line numbers with one-based numbering. This means that the line number is bigger by one than the number of the instrucion, i.e. if the line number is "4", the actual instruction number is "3". This will be fixed in the future.
 
 ## Dependencies
 

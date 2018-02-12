@@ -74,7 +74,10 @@ public class Processor {
                 
                 case Type.J: {
                     if (registers[instruction.get_value(0)] == registers[instruction.get_value(1)]) {
-                            next_instruction = instruction.get_value (2);
+                            next_instruction = instruction.get_value (2) - 1;
+                            if (next_instruction < 0) {
+                                next_instruction = 0;
+                            }
                     }
                 }
                 break;
