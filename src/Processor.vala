@@ -29,7 +29,7 @@ public class Processor {
         this.output = output;
     }
     
-    public void run (Instruction[] instructions, bool debug = false, int[] initial_values = {}, int from = 0) {
+    public void run (Instruction[] instructions, bool debug = false, int[] initial_values = {}, int instruction_cap = 1024, int from = 0) {
         for (int i = 0; i < initial_values.length; i++) {
             registers[i] = initial_values[i];
         }
@@ -40,6 +40,11 @@ public class Processor {
         while (next_instruction < instructions.length) {
             instruction_counter++;
             
+            if (instruction_counter >= instruction_cap) {
+                output.text += @"Instruction limit ($instruction_cap) reached!\n";
+                break;
+            }
+
             var instruction = instructions[next_instruction];
             
             next_instruction++;
@@ -81,8 +86,6 @@ public class Processor {
                 print_registers (highest_register + 1);   
                 
             }
-            
-            
         }
         output.text += _("End result:");
         output.text += "\n";

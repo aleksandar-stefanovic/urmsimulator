@@ -87,6 +87,14 @@ public class URMSimulator.Application : Gtk.Application {
         var initial_values_entry = new Entry ();
         controls.add (initial_values_entry);
         
+        var instruction_cap_text_box = new Box (Orientation.HORIZONTAL, 12);
+        instruction_cap_text_box.hexpand = true;
+        instruction_cap_text_box.add (new Label (_("Instruction execution limit:")));
+        controls.add (instruction_cap_text_box);
+        var instruction_cap_entry = new Entry ();
+        instruction_cap_entry.text = "1024";
+        controls.add (instruction_cap_entry);
+
         //end of creating layout, start of actual logic
         
         processor = new Processor (output_view.buffer);
@@ -97,7 +105,13 @@ public class URMSimulator.Application : Gtk.Application {
             
             var initial_values = Parser.parse_initial_values (initial_values_entry.text);
             var instructions = Parser.parse (source_view.buffer.text);
-            processor.run (instructions, debug_switch.is_active (), initial_values);
+            int cap;
+            var scan_matches = instruction_cap_entry.text.scanf("%i", out cap);
+            if (scan_matches < 1) {
+                output_view.buffer.text += "Invalid instruction cap!\n";
+            } else {
+                processor.run (instructions, debug_switch.is_active (), initial_values, cap);
+            }
         });
         
         open_button.clicked.connect (() => {
