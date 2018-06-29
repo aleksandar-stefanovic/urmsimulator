@@ -21,7 +21,7 @@
 
 public class Processor {
     
-    private int[] registers = new int[256];
+    private Gee.ArrayList<int> registers = new Gee.ArrayList<int> ();
     private Gtk.TextBuffer output;
     public int instruction_counter = 0;
     
@@ -58,21 +58,30 @@ public class Processor {
             
             switch (instruction.type) {
                 case Type.Z: {
-                    registers[instruction.get_value(0)] = 0;
+                    var address = instruction.get_value (0);
+                    ensure_list_capacity (address + 1);
+                    registers[address] = 0;
                 }
                 break;
                 
                 case Type.S: {
-                    registers[instruction.get_value(0)] += 1;
+                    var address = instruction.get_value (0);
+                    ensure_list_capacity (address + 1);
+                    // This has to be done without "+=" because accessing creates a copy
+                    registers[address] = registers[address] + 1;
                 }
                 break;
                 
                 case Type.T: {
+                    ensure_list_capacity (instruction.get_value (0) + 1);
+                    ensure_list_capacity (instruction.get_value (1) + 1);
                     registers[instruction.get_value(1)] = registers[instruction.get_value(0)];
                 }
                 break;
                 
                 case Type.J: {
+                    ensure_list_capacity (instruction.get_value (0) + 1);
+                    ensure_list_capacity (instruction.get_value (1) + 1);
                     if (registers[instruction.get_value(0)] == registers[instruction.get_value(1)]) {
                             next_instruction = instruction.get_value (2) - 1;
                             if (next_instruction < 0) {
@@ -94,18 +103,24 @@ public class Processor {
         output.text += "\n";
         print_registers (highest_register + 1);
     }
+
+    // Stupid, but necessary in absence of a built-in method.
+    private void ensure_list_capacity (int capacity) {
+        while (registers.size < capacity) {
+            registers.add(0);
+        }
+    }
     
     public void reset () {
-        registers = new int[256];
+        registers.clear ();
         instruction_counter = 0;
     }
     
     
     private void print_registers (int to, int from = 0) {
         
-        for (int i = from; i < to; i++) {
-            int val = registers[i];
-            output.text += @"[$val]";
+        foreach (int r in registers) {
+            output.text += @"[$r]";
         }
         output.text += "\n";
     }

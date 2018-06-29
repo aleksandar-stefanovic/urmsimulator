@@ -2,7 +2,7 @@
 project (com.github.aleksandar-stefanovic.urmsimulator)
 
 # the oldest stable cmake version we support
-cmake_minimum_required (VERSION 2.6)
+cmake_minimum_required (VERSION 2.8)
 
 # tell cmake where its modules can be found in our project directory
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
@@ -28,7 +28,7 @@ add_subdirectory (po)
 find_package(PkgConfig)
 
 # now let's actually check for the required dependencies
-pkg_check_modules(DEPS REQUIRED gtk+-3.0 gtksourceview-3.0)
+pkg_check_modules(DEPS REQUIRED gtk+-3.0 gtksourceview-3.0 gee-0.8)
 
 add_definitions(${DEPS_CFLAGS})
 link_libraries(${DEPS_LIBRARIES})
@@ -55,6 +55,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
 PACKAGES
     gtk+-3.0
     gtksourceview-3.0
+    gee-0.8
 OPTIONS
     --enable-deprecated
 )
