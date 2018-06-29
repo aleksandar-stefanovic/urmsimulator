@@ -104,17 +104,21 @@ public class URMSimulator.Application : Gtk.Application {
         processor = new Processor (output_view.buffer);
         
         run_button.clicked.connect (() => {
-            output_view.buffer.text = "";
-            processor.reset ();
-            
-            var initial_values = Parser.parse_initial_values (initial_values_entry.text);
-            var instructions = Parser.parse (source_view.buffer.text);
-            int cap;
-            var scan_matches = instruction_cap_entry.text.scanf("%i", out cap);
-            if (scan_matches < 1) {
-                output_view.buffer.text += "Invalid instruction cap!\n";
-            } else {
-                processor.run (instructions, debug_switch.is_active (), initial_values, cap);
+
+            try {
+                output_view.buffer.text = "";
+                processor.reset ();
+                var initial_values = Parser.parse_initial_values (initial_values_entry.text);
+                var instructions = Parser.parse (source_view.buffer.text);
+                int cap;
+                var scan_matches = instruction_cap_entry.text.scanf("%i", out cap);
+                if (scan_matches < 1) {
+                    output_view.buffer.text += "Invalid instruction cap!\n";
+                } else {
+                    processor.run (instructions, debug_switch.is_active (), initial_values, cap);
+                }
+            } catch (InvalidInstructionException exception) {
+                output_view.buffer.text = exception.message;
             }
         });
         
