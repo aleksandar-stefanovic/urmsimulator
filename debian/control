@@ -1,6 +1,5 @@
 Source: com.github.aleksandar-stefanovic.urmsimulator
 Section: x11
-Priority: extra
 Maintainer: Aleksandar Stefanović <theonewithideas@gmail.com>
 Build-Depends: cmake (>= 2.8),
                cmake-elementary,
@@ -10,7 +9,9 @@ Build-Depends: cmake (>= 2.8),
                libgtksourceview-3.0-dev (>= 3.10),
                valac-0.26 | valac (>= 0.26)
 Standards-Version: 3.9.3
+
 Package: com.github.aleksandar-stefanovic.urmsimulator
 Architecture: any
+Priority: extra
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: A simple URM Simulator.
