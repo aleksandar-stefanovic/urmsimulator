@@ -26,7 +26,7 @@ public class URMSourceView : Gtk.SourceView {
 
         var manager = Gtk.SourceLanguageManager.get_default ();
         var tmp_paths = manager.search_path;
-        tmp_paths +=  "/usr/share/com.github.aleksandar_stefanovic.urmsimulator";
+        tmp_paths +=  "/usr/share/com.github.aleksandar-stefanovic.urmsimulator";
         manager.search_path = tmp_paths;
   
         var buffer = new Gtk.SourceBuffer.with_language (manager.get_language ("urm"));

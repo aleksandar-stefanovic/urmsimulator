@@ -1,5 +1,5 @@
 # project name
-project (com.github.aleksandar_stefanovic.urmsimulator)
+project (com.github.aleksandar-stefanovic.urmsimulator)
 
 # the oldest stable cmake version we support
 cmake_minimum_required (VERSION 2.8)
@@ -12,9 +12,9 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/src)
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 
 # what to call that directory where we install data too
-set (PKGDATADIR "${DATADIR}/com.github.aleksandar_stefanovic.urmsimulator")
+set (PKGDATADIR "${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator")
 
-set (EXEC_NAME "com.github.aleksandar_stefanovic.urmsimulator")
+set (EXEC_NAME "com.github.aleksandar-stefanovic.urmsimulator")
 set (RELEASE_NAME "URM Simulator")
 set (VERSION "1.3.2")
 set (VERSION_INFO "Stable")
@@ -67,18 +67,18 @@ add_executable(${EXEC_NAME} ${VALA_C})
 install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
 # install our .desktop file so the Applications menu will see it
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar_stefanovic.urmsimulator.desktop DESTINATION ${DATADIR}/applications/)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar-stefanovic.urmsimulator.desktop DESTINATION ${DATADIR}/applications/)
 
 # install our .appdata.xml file so AppCenter will see it
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar_stefanovic.urmsimulator.appdata.xml DESTINATION ${DATADIR}/metainfo/)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml DESTINATION ${DATADIR}/metainfo/)
 
 # install our icons
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/16/com.github.aleksandar_stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/16x16/apps)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/24/com.github.aleksandar_stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/24x24/apps)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/32/com.github.aleksandar_stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/32x32/apps)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/48/com.github.aleksandar_stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/48x48/apps)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/64/com.github.aleksandar_stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/64x64/apps)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/128/com.github.aleksandar_stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/128x128/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/16/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/16x16/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/24/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/24x24/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/32/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/32x32/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/48/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/48x48/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/64/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/64x64/apps)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/128/com.github.aleksandar-stefanovic.urmsimulator.svg DESTINATION share/icons/hicolor/128x128/apps)
 
 # install the URM language definition file
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/urm.lang DESTINATION ${DATADIR}/com.github.aleksandar_stefanovic.urmsimulator)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/urm.lang DESTINATION ${DATADIR}/com.github.aleksandar-stefanovic.urmsimulator)

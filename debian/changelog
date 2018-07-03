@@ -1,10 +1,10 @@
-com.github.aleksandar_stefanovic.urmsimulator (1.3.2) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.3.2) precise; urgency=low
 
   * Fixed issues with Debian packaging.
 
  -- Aleksandar Stefanović <theonewithideas@gmail.com>  Fri, 01 Jul 2018 21:00:00 -0500
 
-com.github.aleksandar_stefanovic.urmsimulator (1.3.1) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.3.1) precise; urgency=low
 
   * Views are now scrollable.
   
@@ -12,7 +12,7 @@ com.github.aleksandar_stefanovic.urmsimulator (1.3.1) precise; urgency=low
 
  -- Aleksandar Stefanović <theonewithideas@gmail.com>  Fri, 29 Jun 2018 20:00:00 -0500
 
-com.github.aleksandar_stefanovic.urmsimulator (1.3.0) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.3.0) precise; urgency=low
 
   * Text files can now be opened.
   
@@ -22,25 +22,25 @@ com.github.aleksandar_stefanovic.urmsimulator (1.3.0) precise; urgency=low
 
  -- Aleksandar Stefanović <theonewithideas@gmail.com>  Mon, 12 Feb 2018 22:00:00 -0500
 
-com.github.aleksandar_stefanovic.urmsimulator (1.2.1) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.2.1) precise; urgency=low
 
   * Fixed icon displacement.
 
  -- Aleksandar Stefanović <theonewithideas@gmail.com>  Tue, 11 Jul 2017 8:30:00 -0500
 
-com.github.aleksandar_stefanovic.urmsimulator (1.2.0) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.2.0) precise; urgency=low
 
   * Added basic sythax highlighting.
 
  -- Aleksandar Stefanović <theonewithideas@gmail.com>  Mon, 10 Jul 2017 13:00:00 -0500
  
-com.github.aleksandar_stefanovic.urmsimulator (1.1.0) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.1.0) precise; urgency=low
 
   * Added the ability to specify initial values.
 
  -- Aleksandar Stefanović <theonewithideas@gmail.com>  Sun, 9 Jul 2017 16:00:00 -0500
 
-com.github.aleksandar_stefanovic.urmsimulator (1.0) precise; urgency=low
+com.github.aleksandar-stefanovic.urmsimulator (1.0) precise; urgency=low
 
   * Initial Release.
 
