@@ -27,7 +27,7 @@ public class URMSimulator.Application : Gtk.Application {
     private Processor processor;
     
     public Application () {
-        Object (application_id: "com.github.aleksandar-stefanovic.urmsimulator",
+        Object (application_id: "com.github.aleksandar_stefanovic.urmsimulator",
         flags: ApplicationFlags.FLAGS_NONE);
     }
     

@@ -1,7 +1,7 @@
 # urmsimulator
 Exercise in Vala and publishing to elementary OS's AppCenter.
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.aleksandar-stefanovic.urmsimulator)
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.aleksandar_stefanovic.urmsimulator)
 
 
 ![Screenshot](data/screenshot.png)
