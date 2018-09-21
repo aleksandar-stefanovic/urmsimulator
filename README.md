@@ -3,6 +3,8 @@ Exercise in Vala and publishing to elementary OS's AppCenter.
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.aleksandar-stefanovic.urmsimulator)
 
+> Notice: This project is stalled, because it has issues with Houston CI: Since it was originally pusblished, Houston CI rules have changed, which makes the current Houston CI tests fail either because there's a mismatch between the identificators of the current and the previous release, or because Houston CI doesn't allow the same identificators as the older releases, because they don't abide the rules which were changed since the original release.
+
 
 ![Screenshot](data/screenshot.png)
 
