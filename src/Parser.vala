@@ -33,7 +33,7 @@ public class Parser {
 
         for (int index = 0; index < strings.length; index++) {
             var entry = strings[index];
-            if (entry.replace (" ", "").size() == 0) {
+            if (entry.replace (" ", "").length == 0) {
                 continue;
             }
             
@@ -94,7 +94,7 @@ public class Parser {
         var strings = Regex.split_simple ("\\D+", input.strip ());
         
         foreach(var token in strings) {
-            values += token.to_int();
+            values += int.parse (token);
         }
         
         return values;
