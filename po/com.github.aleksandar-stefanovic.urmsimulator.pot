@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the com.github.aleksandar-stefanovic.urmsimulator package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: com.github.aleksandar-stefanovic.urmsimulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-02 19:01+0200\n"
+"POT-Creation-Date: 2019-07-21 23:45+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Application.vala:33
+#: src/Application.vala:39
 msgid "URM Simulator"
+msgstr ""
+
+#: src/Application.vala:44 src/Application.vala:129
+msgid "Open"
+msgstr ""
+
+#: src/Application.vala:49
+msgid "Run"
+msgstr ""
+
+#: src/Application.vala:79
+msgid "Debug mode"
+msgstr ""
+
+#: src/Application.vala:83
+msgid "Values can by separated by anything."
+msgstr ""
+
+#: src/Application.vala:87
+msgid "Initial values"
+msgstr ""
+
+#: src/Application.vala:96
+msgid "Instruction execution limit:"
+msgstr ""
+
+#: src/Application.vala:128
+msgid "Cancel"
+msgstr ""
+
+#: src/Processor.vala:102
+msgid "End result:"
 msgstr ""
