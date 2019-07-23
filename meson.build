@@ -1,4 +1,4 @@
-project('com.github.aleksandar-stefanovic.urmsimulator', 'vala', 'c', version: '1.3.2')
+project('com.github.aleksandar-stefanovic.urmsimulator', 'vala', 'c', version: '1.3.3')
 
 gnome = import('gnome')
 i18n = import('i18n')

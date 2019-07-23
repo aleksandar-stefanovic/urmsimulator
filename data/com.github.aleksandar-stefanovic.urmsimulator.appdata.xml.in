@@ -21,6 +21,14 @@
   </description>
 
   <releases>
+    <release version="1.3.3" date="2019-07-23">
+      <description>
+        <p>First Juno Release</p>
+        <ul>
+          <li>Fixed issues with the project, which made it possible to publish to AppCenter again. Big thanks to Ryo Nakano!</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.3.2" date="2018-07-01">
       <description>
         <p>Packaging hotfix</p>
