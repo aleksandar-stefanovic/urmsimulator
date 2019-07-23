@@ -37,10 +37,9 @@ gtksourceview-3.0
 Execute these commands in the root of the project:
 
 ```
-mkdir build
+meson build --prefix=/usr
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-make
+ninja
 ```
 
 

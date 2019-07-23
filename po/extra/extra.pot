@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-21 23:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:7
+#: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:3
+#: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:4
+msgid "URM Simulator"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:8
+msgid "Simple URM simulations"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:10
+msgid ""
+"URM (Unlimited Register Machine) is a theoretical machine which has "
+"unlimited memory. It is used to describe that anything that can be "
+"programmed with four basic instructions can also be programmed with any "
+"other programming language."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:11
+msgid ""
+"Use four basic instructions (Zero, Successor, Transfer, Jump) to program any "
+"other operator or function, since things like subtraction are not included!"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:12
+msgid "Features:"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:14
+msgid "Executes URM code correctly"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:15
+msgid "Ability to load a file"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:16
+msgid "Ability to manually set initial values"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:17
+msgid "When in debug mode, shows the result after each instruction"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:18
+msgid "Upon finishing, shows the state of all the used registers"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:19
+msgid "Has sythax highlighting"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:26
+msgid "Packaging hotfix"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:28
+msgid "Fixed issues with Debian packaging."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:35
+msgid "Scrollable Views"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:37
+msgid "Views are now scrollable."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:38
+msgid "Basic input checking has been added."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:45
+msgid "No More Freezes"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:47
+msgid "Text files can now be opened."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:48
+msgid "Execution cap is added, to avoid freezing."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:49
+msgid "Instructions are now one-based numbered."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:55
+msgid "Aleksandar Stefanović"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:5
+msgid "A simple URM Simulator."
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:8
+msgid "com.github.aleksandar-stefanovic.urmsimulator"
+msgstr ""
+
+#: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:12
+msgid "URM;Simulator;"
+msgstr ""

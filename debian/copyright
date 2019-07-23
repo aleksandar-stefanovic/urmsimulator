@@ -2,7 +2,7 @@ Format: http://dep.debian.net/deps/dep5
 Upstream-Name: com.github.aleksandar-stefanovic.urmsimulator
 Source: https://github.com/aleksandar-stefanovic/urmsimulator
 
-Files: src/* data* cmake/* debian/*
+Files: src/* data/* debian/*
 Copyright: 2017 Aleksandar Stefanović <theonewithideas@gmail.com>
 License: GPL-3.0+
 
