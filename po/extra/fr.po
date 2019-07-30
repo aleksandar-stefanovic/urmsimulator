@@ -1,43 +1,43 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# French translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extra package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# NathanBnm, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-30 11:10+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-07-30 11:10+0200\n"
+"Last-Translator: NathanBnm\n"
+"Language-Team: none\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:3
 #: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:4
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:7
 msgid "URM Simulator"
-msgstr ""
+msgstr "Simulateur URM"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:5
 msgid "A simple URM Simulator."
-msgstr ""
+msgstr "Un simple simulateur URM"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:8
 msgid "com.github.aleksandar-stefanovic.urmsimulator"
-msgstr ""
+msgstr "com.github.aleksandar-stefanovic.urmsimulator"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.desktop.in:12
 msgid "URM;Simulator;"
-msgstr ""
+msgstr "URM;Simulateur;"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:8
 msgid "Simple URM simulations"
-msgstr ""
+msgstr "Simples simulations URM"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:10
 msgid ""
@@ -46,87 +46,94 @@ msgid ""
 "programmed with four basic instructions can also be programmed with any "
 "other programming language."
 msgstr ""
+"URM (Unlimited Register Machine) est une machine théorique a mémoire illimitée. "
+"On l'utilise pour décrire que tout ce qui peut être programmé avec quatre instructions simples peut aussi "
+"être programmé avec n'importe quel langage de programmation."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:11
 msgid ""
 "Use four basic instructions (Zero, Successor, Transfer, Jump) to program any "
 "other operator or function, since things like subtraction are not included!"
 msgstr ""
+"Utilisez quatre instructions basiques (Zero, Successor, Transfer, Jump) pour programmer n'importe quel "
+"autre opérateur ou fonction, comme la soustraction qui n'est pas incluse !"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:12
 msgid "Features:"
-msgstr ""
+msgstr "Fonctionalités :"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:14
 msgid "Executes URM code correctly"
-msgstr ""
+msgstr "Exécutez du code URM correctement"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:15
 msgid "Ability to load a file"
-msgstr ""
+msgstr "Possibilité de charger un fichier"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:16
 msgid "Ability to manually set initial values"
-msgstr ""
+msgstr "Possibilité de définir manuellement les valeurs initiales"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:17
 msgid "When in debug mode, shows the result after each instruction"
-msgstr ""
+msgstr "En mode débogage, le résultat est affiché après chaque instruction"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:18
 msgid "Upon finishing, shows the state of all the used registers"
-msgstr ""
+msgstr "Une fois terminé, l'état de tous les registres utilisé est affiché"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:19
 msgid "Has sythax highlighting"
-msgstr ""
+msgstr "Coloration syntaxique"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:26
 msgid "First Juno Release"
-msgstr ""
+msgstr "Première version pour Juno"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:28
 msgid ""
 "Fixed issues with the project, which made it possible to publish to "
 "AppCenter again. Big thanks to Ryo Nakano!"
 msgstr ""
+"Correction de problèmes avec le projet, ce qui a permis de le publier à nouveau dans "
+"le Centre d'Applications. Merci beaucoup à Ryo Nakano !"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:34
 msgid "Packaging hotfix"
-msgstr ""
+msgstr "Correction critique de paquet"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:36
 msgid "Fixed issues with Debian packaging."
-msgstr ""
+msgstr "Correction de problèmes avec les paquets Debian."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:43
 msgid "Scrollable Views"
-msgstr ""
+msgstr "Vues défilables"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:45
 msgid "Views are now scrollable."
-msgstr ""
+msgstr "Les vues sont désormais défilables."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:46
 msgid "Basic input checking has been added."
-msgstr ""
+msgstr "Un version basique de vérification de saisie a été ajoutée."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:53
 msgid "No More Freezes"
-msgstr ""
+msgstr "Plus de plantages"
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:55
 msgid "Text files can now be opened."
-msgstr ""
+msgstr "Les fichiers Texte peuvent désormais être ouverts."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:56
 msgid "Execution cap is added, to avoid freezing."
-msgstr ""
+msgstr "Un capuchon d'exécution a été ajouté, pour éviter les plantages."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:57
 msgid "Instructions are now one-based numbered."
-msgstr ""
+msgstr "Les instructions sont désormais numérotées en base un."
 
 #: data/com.github.aleksandar-stefanovic.urmsimulator.appdata.xml.in:63
 msgid "Aleksandar Stefanović"
-msgstr ""
+msgstr "Aleksandar Stefanović"
