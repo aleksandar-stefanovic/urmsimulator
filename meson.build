@@ -12,6 +12,7 @@ executable(
     meson.project_name(),
     'src/Application.vala',
     'src/Instruction.vala',
+    'src/MainWindow.vala',
     'src/Parser.vala',
     'src/Processor.vala',
     'src/widget/URMSourceView.vala',
