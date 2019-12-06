@@ -21,7 +21,7 @@
 using Gtk;
 
 public class URMSimulator.MainWindow : Gtk.ApplicationWindow {
-    private URMSourceView source_view;
+    public URMSourceView source_view { get; set; }
     private SourceView output_view;
     private Processor processor;
 

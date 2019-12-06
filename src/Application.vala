@@ -21,12 +21,31 @@
 
 public class URMSimulator.Application : Gtk.Application {
     private MainWindow app_window;
-    
+
     public Application () {
         Object (application_id: "com.github.aleksandar-stefanovic.urmsimulator",
-        flags: ApplicationFlags.FLAGS_NONE);
+        flags: ApplicationFlags.HANDLES_OPEN);
     }
-    
+
+    protected override void open (File[] urm_files, string hint) {
+        if (urm_files.length == 0) {
+            return;
+        }
+
+        foreach (var urm_file in urm_files) {
+            try {
+                string text;
+                FileUtils.get_contents (urm_file.get_path (), out text);
+
+                app_window = new MainWindow (this);
+                app_window.source_view.buffer.text = text;
+                app_window.show_all ();
+            } catch (Error e) {
+                error (e.message);
+            }
+        }
+    }
+
     protected override void activate () {
         if (app_window != null) {
             app_window.present ();
